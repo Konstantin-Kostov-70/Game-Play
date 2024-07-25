@@ -8,12 +8,14 @@ export const GameProvider = ({
 }) => {
 
   const [games, setGames] = useState([])
+
   useEffect(() => {
     services.getAll()
-      .then(result => {
-        setGames(result)
-      })
-  }, [])
+      .then(res => setGames(res.result))
+      .catch(err => {
+        console.error('Error fetching games:', err);
+      });
+  }, []);
 
   const addGame = (game) => {
     setGames(games => [...games, game])

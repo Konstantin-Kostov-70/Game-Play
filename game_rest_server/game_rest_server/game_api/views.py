@@ -65,7 +65,10 @@ class GameGetEditDeleteView(APIView):
     def put(self, request, pk):
         try:
             game = Games.objects.get(pk=pk)
-            put_game_serializer = GamesSerializer(game, data=request.data)
+            data = request.data
+            data['owner'] = game.owner.id
+            put_game_serializer = GamesSerializer(game, data=data)
+            
             if put_game_serializer.is_valid():
                 put_game_serializer.save()
                 return Response(put_game_serializer.data, status=status.HTTP_200_OK)

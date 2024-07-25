@@ -19,8 +19,11 @@ export const CreatePage = () => {
             ...gameData,
             owner
         })
-            .then(res => addGame(res))
-        navigate('/catalog')        
+            .then(res => {
+               
+                addGame(res)
+                navigate('/catalog')
+            })    
     }
 
     return (

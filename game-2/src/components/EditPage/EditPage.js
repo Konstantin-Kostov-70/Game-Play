@@ -36,6 +36,8 @@ export const EditPage = () => {
 
     const onSubmit = (ev) => {
         ev.preventDefault()
+        console.log('ID: ', id);
+        console.log('Game: ', game);
         services.editOne(id, game)
             .then(res => {
                 editGame(id, res)
