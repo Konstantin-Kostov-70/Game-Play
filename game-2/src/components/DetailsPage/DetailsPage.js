@@ -35,8 +35,10 @@ export const DetailsPage = () => {
 
     const onDelete = () => {
         services.deleteOne(id)
-        delGame(id)
-        navigate('/catalog')
+           .then(res => {
+               delGame(id)
+               navigate('/catalog')
+           })
     }
 
     const onSubmit = (ev) => {
