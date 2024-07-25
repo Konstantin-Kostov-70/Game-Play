@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+.error-wrapper {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Odibee Sans";
+    color:crimson;
+    font-size: x-large;
+    letter-spacing: 1px;
+    border: 2px crimson solid;
+   
+}

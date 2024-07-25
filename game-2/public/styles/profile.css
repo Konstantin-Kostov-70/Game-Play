@@ -1,0 +1,169 @@
+@import url('https://use.fontawesome.com/releases/v6.4.2/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#profile-details {
+    position: relative;
+    display: block;
+    width: 980px;
+    margin: 90px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+#profile-details>h1 {
+    color: #fff;
+    letter-spacing: 0.2rem;
+    /* font-family: "Press Start 2P"; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.profile-header {
+    width: 60%;
+    margin-left: 0;
+    position: relative;
+    padding: 25px 25px 25px 0;
+    height: 40%;
+}
+
+.profile_header>h1 {
+    color: black;
+    margin-top: 5px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.profile_header>h4 {
+    color: #555;
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.username {
+    display: inline-block;
+    position: relative;
+    right: 20px;
+    margin-top: 15px;
+    color: #555;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: #b4b6ee;
+    border: 1px solid rgba(218, 181, 181, 0.829);
+}
+
+.profile-img {
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-right: 22px;
+    height: 220px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.details {
+    /* display: inline-block; */
+    color: #959595;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+.profile-info {
+    display: flex;
+}
+
+.favorite-games {
+    width: 39%;
+    padding: 30px;
+}
+
+.favorite-games>h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nav-fav-games {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.item-fav-game {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px gray;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.button-fav-game {
+    height: 5%;
+    background-color: #54557b;
+    padding: 4px;
+    margin-top: auto;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+
+}
+
+.button-fav-game:hover {
+    background-color: #6f5d9c;
+    color: white;
+}
+
+.img-fav-game {
+    display: block;
+    height: 35px;
+    width: 35px;
+    border: rgb(165, 164, 164) 2px solid;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.title-fav-game {
+    width: 80%;
+    text-align: right;
+}
+
+.bio {
+    border-top: 1px solid #545454;
+    font-size: 25px;
+    color: #545454;
+    padding-top: 20px;
+}
+
+.bio>h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fa-brands.fa-facebook {
+    color: blue;
+    font-size: 20px;
+}
+
+.fa-brands.fa-facebook:hover {
+    color: rgb(118, 118, 251);
+}
+
+.fa-brands.fa-github, .fa-brands.fa-instagram {
+    font-size: 20px;
+    color: #000;
+}
+
+.fa-brands.fa-github:hover, .fa-brands.fa-instagram:hover {
+    color: gray;
+}
