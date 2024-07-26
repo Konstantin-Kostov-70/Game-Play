@@ -105,8 +105,10 @@ label[for="terms"]>input {
     font-size: 26px;
     cursor: pointer;
     font-weight: 900;
-    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
-    transition: 0.5s;
+    /* box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.5s; */
+    box-shadow: 0 6px #999, 0 9px #666 inset; 
+    transition: box-shadow 0.2s ease, transform 0.2s ease; 
 }
 
 .btn.submit:hover {
