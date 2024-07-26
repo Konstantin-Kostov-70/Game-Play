@@ -39,8 +39,9 @@ export const EditPage = () => {
         services.editOne(id, game)
             .then(res => {
                 editGame(id, res)
+                navigate(`/details/${id}`)
             })
-        navigate(`/details/${id}`)
+       
     }
 
     return (
