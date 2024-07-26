@@ -78,3 +78,9 @@
     margin-top: auto;
     margin-left: 20px;
 }
+
+.footer {
+    color: rgb(204, 144, 131);
+    text-align: center;
+    margin: 40px auto;
+}
