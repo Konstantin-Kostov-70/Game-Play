@@ -15,7 +15,7 @@ export const HomePage = () => {
     }, [])
 
     games.reverse()
-    const lastGames = games.length > 2 ? games.slice(0, 2) : games
+    const lastGames = games.length > 3 ? games.slice(0, 3) : games
     return (
        
             <section id="welcome-world">
