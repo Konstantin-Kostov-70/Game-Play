@@ -169,3 +169,24 @@ Represents a comment made by a user on a game.
 ### **Clone the Repository**
 ```sh
 git clone <repository_url>
+```
+### **Navigate to the Project Directory**
+```sh
+cd project_directory
+```
+### **Install Dependencies**
+```sh
+pip install -r requirements.txt
+```
+### **Set Up the Database**
+```sh
+python manage.py migrate
+```
+### **Create a Superuser**
+```sh
+python manage.py createsuperuser
+```
+### **Run the Development Server**
+```sh
+python manage.py runserver
+```
