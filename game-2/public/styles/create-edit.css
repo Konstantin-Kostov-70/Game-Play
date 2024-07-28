@@ -15,7 +15,7 @@ input[type="text"]{
     background: #ecf0f3;
     padding: 30px;
     padding-left: 20px;
-    height: 10px;
+    /* height: 10px; */
     margin-top: 10px;
     font-size: 18px;
     border-radius: 50px;

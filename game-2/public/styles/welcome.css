@@ -57,31 +57,30 @@
 }
 
 #welcome-world>#home-page {
-    width: 50% fit-content;
-    margin: auto;
     text-align: center;
 }
 
 #home-page {
+    width: auto;
+    height: auto;
+    margin: 0 20px;
+    padding: 55px;
     background-color: transparent;
     box-shadow: 0px 0px 40px 0px;
     overflow: hidden;
     border-radius: 10px;
-    padding: 55px;
-    height: auto;
-    width: auto;
 }
 
 .game {
-    box-shadow: 0px 0px 30px 0px brown;
+    width: 25%;
+    height: auto;
     margin-top: 20px;
     padding: 50px;
-    margin-left: 50px;
     background-position: right 35% bottom 45%;
     box-sizing: border-box;
+    box-shadow: 0px 0px 30px 0px brown;
     border-radius: 15px;
     float: left;
-    height: auto;
     color: rgb(204, 144, 131);
 }
 
@@ -90,8 +89,8 @@
 }
 
 .image-wrap {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: auto;
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
@@ -131,13 +130,8 @@
 }
 
 .rating span {
-    font-size: 40px;
-    padding: 4px;
-}
-
-.rating span:before {
-    content: "\2605";
-    position: absolute;
+    font-size: 25px;
+    padding: 5px;
     color: gold;
 }
 
@@ -151,6 +145,7 @@
 }
 
 .data-buttons {
+    margin-top: 10px;
     font-size: 1.4rem;
     padding-top: 20px;
     text-align: center;

@@ -8,7 +8,7 @@ export const AllGames = ({
             <div className="allGames-info">
                 <img src={game.imageUrl} alt="img"/>
                 <h6>{game.category}</h6>
-                <h2>{game.title}</h2>
+                <h6>{game.title}</h6>
                 <Link to={`/details/${game.id}`} className="details-button">Details</Link>
             </div>
 

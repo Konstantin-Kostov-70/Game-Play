@@ -18,8 +18,8 @@ export const Login = () => {
     }
 
     return (
-        <section id="login-page" className="auth">
-            <form id="login" onSubmit={onSubmit}>
+        <section  className="login register page auth">
+            <form className='log-reg' onSubmit={onSubmit}>
 
                 <div className="container">
                     <div className="brand-logo"></div>
@@ -30,10 +30,10 @@ export const Login = () => {
                     <label htmlFor="login-pass">Password:</label>
                     <input type="password" id="login-password" name="password" />
                     <input type="submit" className="btn submit" value="Login" />
-                    <p className="field">
-                        <span>If you don't have profile click <Link to={'/register'}>here</Link></span>
-                    </p>
                 </div>
+                <p className="field">
+                    <span>Don't have profile click <Link to={'/register'}>here</Link></span>
+                </p>
             </form>
         </section>
     )

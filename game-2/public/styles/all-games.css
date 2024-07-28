@@ -8,6 +8,7 @@
     padding: 20px;
     height: auto;
     width: 900px;
+    margin-top: 90px;
 }
 
 #catalog-page>h1 {
@@ -54,12 +55,6 @@
 }
 
 .allGames-info>h6 {
-    font-size: 20px;
-    font-weight: 750;
-    color: #161618;
-}
-
-.allGames-info>h2 {
     font-size: 20px;
     font-weight: 750;
     color: #161618;

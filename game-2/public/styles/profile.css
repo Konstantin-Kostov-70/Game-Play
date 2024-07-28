@@ -11,6 +11,11 @@
     transition: all 0.4s;
 }
 
+.profile-info {
+    display: flex;
+    padding: 25px;
+}
+
 #profile-details>h1 {
     color: #fff;
     letter-spacing: 0.2rem;
@@ -26,9 +31,8 @@
 .profile-header {
     width: 60%;
     margin-left: 0;
-    position: relative;
-    padding: 25px 25px 25px 0;
-    height: 40%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile_header>h1 {
@@ -56,12 +60,20 @@
     border: 1px solid rgba(218, 181, 181, 0.829);
 }
 
+.img-container {
+    width: 35%;
+}
+.info-wrapper {
+    width: 60%;
+}
+
+.info-wrapper,
+.img-container {
+    margin: 0;
+}
+
 .profile-img {
-    position: relative;
-    float: left;
-    margin-left: 15px;
-    margin-right: 22px;
-    height: 220px;
+    width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
 }
@@ -73,13 +85,8 @@
     margin-left: 10px;
 }
 
-.profile-info {
-    display: flex;
-}
-
 .favorite-games {
     width: 39%;
-    padding: 30px;
 }
 
 .favorite-games>h3 {
@@ -96,6 +103,8 @@
 .item-fav-game {
     margin-bottom: 15px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
     border-radius: 5px;
     box-shadow: 2px 2px 6px gray;
 }
@@ -103,6 +112,7 @@
 .img-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 10px;
     align-items: center;
     margin-left: 0;
@@ -110,11 +120,12 @@
 }
 
 .button-fav-game {
-    height: 5%;
-    background-color: #54557b;
+    width: 50px;
+    margin-top: 5px;
     padding: 4px;
-    margin-top: auto;
+    text-align: center;
     font-size: 12px;
+    background-color: #54557b;
     color: rgb(255, 255, 255);
 
 }
@@ -125,17 +136,17 @@
 }
 
 .img-fav-game {
-    display: block;
-    height: 35px;
-    width: 35px;
+    width: 40px;
+    margin: 0;
+    display: inline-flex;
     border: rgb(165, 164, 164) 2px solid;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .title-fav-game {
-    width: 80%;
-    text-align: right;
+    display: flex;
+    margin: 0;
 }
 
 .bio {

@@ -95,7 +95,7 @@ export const DetailsPage = () => {
                 </div>
                 {game.owner === owner &&
                     <div className="buttons">
-                        <Link to={`/edit/${id}`} className="button">Edit</Link>
+                        <Link to={`/edit/${id}`} className="button edit">Edit</Link>
                         <button className="button" onClick={onDelete}>Delete</button>
                     </div>
                 }

@@ -28,8 +28,8 @@ export const Register = () => {
     }
 
     return (
-        <section id="register-page" className="content auth">
-            <form id="register" onSubmit={onSubmit}>
+        <section  className="login register page content auth">
+            <form className='log-reg' onSubmit={onSubmit}>
                 <div className="container">
                     <div className="brand-logo"></div>
                     <h1>Register</h1>
@@ -44,11 +44,10 @@ export const Register = () => {
                     <input type="password" name="password2" id="confirm-password" />
 
                     <input className="btn submit" type="submit" value="Register" />
-
-                    <p className="field">
-                        <span>If you already have profile click <Link to={'/login'}>here</Link></span>
-                    </p>
                 </div>
+                <p className="field">
+                    <span>Have profile click <Link to={'/login'}>here</Link></span>
+                </p>
             </form>
         </section>
     )

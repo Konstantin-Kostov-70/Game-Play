@@ -1,0 +1,359 @@
+@media (max-width: 1600px) {
+  .game {
+    padding: 30px;
+  }
+  .image-wrap {
+    width: 90%;
+  }
+  .rating span {
+    font-size:1rem;
+  }
+  .game > h3 {
+    font-size: 1.875rem;
+  }
+  .details-btn {
+    padding: 0.7em 1.4em;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+    #home-page > h1 {
+        font-size: 70px;
+    }
+    .game {
+        margin: 20px 0 0 0;
+    }
+    .rating span {
+        font-size:0.7rem;
+      }
+    .game > h3 {
+        font-size: 1.5rem;
+    }
+
+    .details-btn {
+        font-size: 1rem;
+      }
+    .welcome-message h2 {
+        font-size: 3.2rem;
+    }
+    .welcome-message h3 {
+        font-size: 5.3rem;
+    }
+    #game-details {
+        width: 70%;
+    }
+    .info-section>.text {
+        padding: 40px;
+        font-size: 1.3rem;
+    }
+    #catalog-page {
+        width: 70%;
+    }
+    .create-comment {
+        width: 100%;
+    }
+    #profile-details {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #home-page > h1 {
+        font-size: 65px;
+    }
+    .game > h3 {
+        font-size: 1.1rem;
+    }
+    .details-btn {
+        font-size: 0.8rem;
+    }
+    .rating span {
+        padding: 3px;
+        font-size:0.5rem;
+    }
+
+    .welcome-message h2 {
+        font-size: 2.8rem;
+    }
+    .welcome-message h3 {
+        font-size: 4.5rem;
+    }
+    #game-details {
+        width: 80%;
+    }
+    .login.register.page {
+        width: 70%;
+    }
+    .profile-header {
+        flex-direction: column;
+        justify-content: start;
+    }
+    .info-wrapper {
+        width: 100%;
+    }
+}   
+
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    } 
+    #toggle.open {
+        margin-top: 5px;
+        padding: 20px;
+        display: block;
+        color: #fff;
+        background-color: #29303c; 
+    }
+    #user,
+    #guest {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .ham-menu {
+        display: block;
+        margin: 0;
+        font-size: 35px;
+    }
+    #home-page-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    #home-page > h1 {
+        font-size: 55px;
+    }
+    .game {
+        width: 75%;
+        padding: 40px;
+    }
+    .game > h3 {
+        font-size: 2rem;
+    }
+    .details-btn {
+        font-size: 1.2rem;
+    }
+    .rating span {
+        padding: 3px;
+        font-size:1rem;
+    }
+    .welcome-message h2 {
+        font-size: 1.8rem;
+    }
+    .welcome-message h3 {
+        font-size: 3.2rem;
+    }
+    #welcome-world {
+        padding-top: 5em;
+    }
+    .info-section>.details-comments li {
+        width: 85%;
+        margin-left: auto;
+    }
+    .info-section>.text {
+        padding: 3%;
+        font-size: 1.1rem;
+    }
+    .game-img {
+        width: 40%;
+        height: auto;
+    }
+    #game-details>h1,
+    #catalog-page>h1
+     {
+        font-size: 1.8rem;
+    }
+    #catalog-page {
+        width: 80%;
+    }
+    .container {
+        padding: 20px;
+    }
+    .container > h1 {
+        font-size: 2.2rem;
+    }
+    label {
+        font-size: 1.4rem;
+    }
+    .login.register.page {
+        padding: 30px;
+    }
+    .profile-info {
+        flex-direction: column;
+        gap: 20px;
+       }
+    .profile-header,
+    .favorite-games {
+        width: 100%;
+    }
+    .profile-header {
+        border-bottom: 1px solid #29303c;
+        padding-bottom: 20px;
+    }
+    .bio {
+        font-size: 1.3rem;
+    }
+    .img-container {
+        width: 25%;
+    }
+}
+
+
+@media (max-width: 530px) {
+    #home-page {
+        padding: 30px;
+    }
+    .game {
+        width: 85%;
+    }
+    #home-page > h1 {
+        font-size: 48px;
+    }
+    .welcome-message h2 {
+        font-size: 1.4rem;
+    }
+    .welcome-message h3 {
+        font-size: 2.2rem;
+    }
+    #welcome-world {
+        padding-top: 2em;
+    }
+    .info-section>.text {
+        margin-top: 0;
+    }
+    .game-header h1 {
+        font-size: 1.3rem;
+    }
+    #game-details {
+        margin: 50px auto;
+    }
+    #catalog-page {
+        width: 90%;
+    }
+    .allGames-info>img {
+        width: 40%;
+        height: auto;
+    }
+    input[type="nickname"],
+    input[type="password"],
+    input[type="number"],
+    input[type="text"] {
+        padding: 20px;
+   }
+   .login.register.page {
+    width: 80%;
+   }
+   .btn.submit {
+    font-size: 1.4rem;
+   }
+   .field>span {
+    font-size: 1rem;
+   }
+   .auth {
+    margin: 4em auto;
+   }
+   .create-comment>.form>textarea {
+    width: 85%;
+   }
+   #edit > .container > input, 
+   #edit > .container > textarea {
+    font-size: 1rem;
+   }
+   select {
+    height: 50px;
+   }
+   #profile-details>h1 {
+    font-size: 1.8rem;
+}
+}
+
+
+@media (max-width: 430px) {
+    .game {
+        width: 100%;
+    }
+    #home-page > h1 {
+        font-size: 40px;
+    }
+    .welcome-message h2 {
+        font-size: 1.2rem;
+    }
+    .welcome-message h3 {
+        font-size: 2rem;
+    }
+    .game-header h1 {
+        font-size: 1.2rem;
+    } 
+    #catalog-page {
+        padding: 15px;
+    }
+    .allGames-info {
+        padding: 20px;
+    }
+    .allGames-info>h6 {
+        font-size: 1.1rem;
+    }
+    .allGames-info .details-button {
+        font-size: 15px;
+    }
+    .login.register.page {
+        padding: 15px;
+    }
+    .container {
+        padding: 20px 10px;
+    }
+    .brand-logo {
+        width: 80px;
+        height: 80px;
+    }
+    .btn.submit {
+        font-size: 1.1rem;
+        height: 45px;
+        box-shadow: none;
+        padding: 5px;
+        margin-top: 50px;
+       }
+    input[type="nickname"],
+    input[type="password"],
+    input[type="number"],
+    input[type="text"] {
+        padding: 10px;
+        height: 45px;
+    }
+    label {
+        font-size: 1.1rem;
+    }
+    .container>h1 {
+        font-size: 1.7rem;
+    }
+    .field>span {
+        font-size: 0.9rem;
+    }
+    .field {
+        margin-top: 30px;
+    }
+    .button {
+        font-size: 1rem;
+    }
+    .create-comment>label {
+        font-size: 1.5rem;
+    }
+    .create-comment>.form>textarea::placeholder {
+        font-size: 1.2rem;
+    }
+    select {
+        height: 45px;
+       }
+    #profile-details {
+        margin: 40px auto;
+    }
+    #profile-details>h1 {
+        font-size: 1.5rem;
+    }
+    .bio {
+        font-size: 1.1rem;
+    }
+} 

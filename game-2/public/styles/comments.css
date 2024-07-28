@@ -1,6 +1,6 @@
 .create-comment>.form>textarea {
     resize: none;
-    width: 100px;
+    width: 70%;
     height: 100px;
     margin-top: 22px;
     margin-bottom: 28px;

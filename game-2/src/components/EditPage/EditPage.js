@@ -45,7 +45,7 @@ export const EditPage = () => {
     }
 
     return (
-        <section id="edit-page" className="auth">
+        <section className="login register page auth">
             <form id="edit" onSubmit={onSubmit}>
                 <div className="container">
 

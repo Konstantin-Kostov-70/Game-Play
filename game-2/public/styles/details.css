@@ -121,10 +121,15 @@
     margin-top: auto;
     font-size: 21px;
     color: rgb(255, 255, 255);
+    border-radius: 0.3em;
+    font-weight: bold;
 }
 
 .button:hover {
     background-color: #6f5d9c;
     color: white;
+}
+.button.edit {
+    padding: 16px;
 }
 
