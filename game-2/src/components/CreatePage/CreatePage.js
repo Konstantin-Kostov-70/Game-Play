@@ -27,8 +27,8 @@ export const CreatePage = () => {
     }
 
     return (
-        <section id="create-page" className="auth">
-            <form id="create" onSubmit={onSubmit}>
+        <section className="login register page auth">
+            <form  className='log-reg' onSubmit={onSubmit}>
                 <div className="container">
 
                     <h1>Create Game</h1>
