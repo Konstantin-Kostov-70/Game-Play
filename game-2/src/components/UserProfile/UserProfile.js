@@ -7,8 +7,11 @@ export const Profile = () => {
   const { id } = useParams();
   const { auth, userLogout } = useContext(AuthContext);
   const [user, setUser] = useState({});
+  const [isGamesAccordionOpen, setIsGamesAccordionOpen] = useState(false)
+  const [isStoryAccordionOpen, setIsStoryAccordionOpen] = useState(false)
   const token = auth.token;
   const navigate = useNavigate();
+
 
   useEffect(() => {
     if (!token) {
@@ -17,7 +20,6 @@ export const Profile = () => {
     userService
       .getUser(token, id)
       .then((res) => {
-        console.log(res.status);
         setUser(res);
       })
       .catch((error) => {
@@ -35,6 +37,14 @@ export const Profile = () => {
   if (!Object.keys(user).includes("user")) {
     return <p>Loading...</p>;
   }
+
+  const toggleGamesAccordion = () => {
+    setIsGamesAccordionOpen(!isGamesAccordionOpen);
+  };
+
+  const toggleStoryAccordion = () => {
+    setIsStoryAccordionOpen(!isStoryAccordionOpen);
+  };
 
   return (
     <section id="profile-details">
@@ -89,8 +99,11 @@ export const Profile = () => {
               )}
             </div>
           </div>
-          <div className="favorite-games">
-            <h3>My favorite games</h3>
+          <div className={`favorite-games ${isGamesAccordionOpen ? "open" : "closed"}`}>
+            <div className="title-wrapper">
+              <h3>My favorite games</h3>
+              <h3 onClick={toggleGamesAccordion}><i className="fa-solid fa-angle-down"></i></h3>
+            </div>
             <ul className="nav-fav-games">
               {user.user_games.map((game, idx) => (
                 <li className="item-fav-game" key={idx}>
@@ -110,12 +123,17 @@ export const Profile = () => {
             </ul>
           </div>
         </div>
-        <div className="bio">
-          <h3>My story</h3>
-          {user.user.story ? <p>{user.user.story}</p> : <p></p>}
+        <div className={`bio ${isStoryAccordionOpen ? "open-story" : "closed-story"}`}>
+          <div className="title-wrapper story">
+            <h3>My story</h3>
+            <h3 onClick={toggleStoryAccordion}><i className="fa-solid fa-angle-down"></i></h3>
+          </div>
+          <div className="profile-story">
+            {user.user.story ? <p>{user.user.story}</p> : <p></p>}
+          </div>
         </div>
 
-        <div className="buttons">
+        <div className="buttons btn-prof">
           <Link to={`/user/edit/${id}`} className="button edit">
             Edit
           </Link>

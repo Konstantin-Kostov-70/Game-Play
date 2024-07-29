@@ -10,6 +10,7 @@ export const DetailsPage = () => {
     const { id } = useParams()
     const [game, setGame] = useState({})
     const [comments, setComments] = useState([])
+    const [isCommentOpen, setIsCommentOpen] = useState(false)
     const navigate = useNavigate()
     const { delGame } = useContext(GameContext)
     const { auth } = useContext(AuthContext)
@@ -59,6 +60,11 @@ export const DetailsPage = () => {
         ev.target.reset()
     }
 
+    const toggleCommentAccordion = () => {
+        setIsCommentOpen(!isCommentOpen)
+      };
+    
+
     return (
         <section id="game-details">
             <h1>Game Details</h1>
@@ -75,23 +81,28 @@ export const DetailsPage = () => {
                     {game.summary}
                 </p>
 
-                <div className="details-comments">
-                    <h2>Comments:</h2>
-                    {comments.length > 0
-                        ?
-                        comments.map((comment, idx) => (
+                <div className={`details-comments ${isCommentOpen ? "open-comment" : "closed-comment"}`}>
+                    <div className='title-wrapper'>
+                        <h2>Comments:</h2>
+                        <h3 onClick={toggleCommentAccordion}><i className="fa-solid fa-angle-down"></i></h3>
+                    </div>
+                    <div className='comments'>
+                        {comments.length > 0
+                            ?
+                            comments.map((comment, idx) => (
 
-                            <ul key={idx}>
-                                <li className="comment">
+                                <ul key={idx}>
+                                    <li className="comment">
                                     <p>{comment.comment}</p>
-                                </li>
-                                <p>{comment.username}</p>
-                                <p>{comment.date_of_creation}</p>
-                            </ul>
-                        ))
-                        :
-                        <p className="no-comment">No comments.</p>
-                    }
+                                    </li>
+                                    <p>{comment.username}</p>
+                                    <p>{comment.date_of_creation}</p>
+                                </ul>
+                            ))
+                            :
+                            <p className="no-comment">No comments.</p>
+                        }
+                    </div>
                 </div>
                 {game.owner === owner &&
                     <div className="buttons">
