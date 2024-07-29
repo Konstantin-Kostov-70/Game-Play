@@ -25,10 +25,21 @@ export const Login = () => {
                     <div className="brand-logo"></div>
                     <h1>Login</h1>
                     <label htmlFor="username">Username:</label>
-                    <input type="text" id="email" name="username" placeholder="Your username" />
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Your username" 
+                        autoComplete="username"
+                    />
 
-                    <label htmlFor="login-pass">Password:</label>
-                    <input type="password" id="login-password" name="password" />
+                    <label htmlFor="login-password">Password:</label>
+                    <input 
+                        type="password" 
+                        id="login-password" 
+                        name="password" 
+                        autoComplete="current-password"
+                        />
                     <input type="submit" className="btn submit" value="Login" />
                 </div>
                 <p className="field">
