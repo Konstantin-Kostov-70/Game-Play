@@ -86,7 +86,7 @@
 }
 
 .favorite-games {
-    width: 39%;
+    width: 40%;
 }
 
 .favorite-games>h3 {
@@ -98,6 +98,32 @@
     list-style: none;
     padding: 0px;
     margin: 0px;
+}
+
+.title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 20px;
+}
+
+.title-wrapper.story {
+    padding-top: 40px;
+    border-top: 1px solid #29303c;
+}
+
+.title-wrapper  h3 {
+    margin: 0;
+}
+
+.fa-solid.fa-angle-down {
+    cursor: pointer;
+    display: none;
+}
+
+.favorite-games ul {
+    transition: all 0.5s ease;
 }
 
 .item-fav-game {
@@ -117,6 +143,10 @@
     align-items: center;
     margin-left: 0;
     margin-right: 0;
+}
+
+.buttons.btn-prof {
+    margin-top: 30px;
 }
 
 .button-fav-game {
@@ -150,15 +180,20 @@
 }
 
 .bio {
-    border-top: 1px solid #545454;
     font-size: 25px;
     color: #545454;
-    padding-top: 20px;
+    padding: 0 40px;
 }
 
 .bio>h3 {
-    text-align: center;
     margin-bottom: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #29303c;
+    text-align: center;
+}
+
+.bio p {
+  margin: 0;
 }
 
 .fa-brands.fa-facebook {

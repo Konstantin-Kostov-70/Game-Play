@@ -73,7 +73,6 @@
         padding: 3px;
         font-size:0.5rem;
     }
-
     .welcome-message h2 {
         font-size: 2.8rem;
     }
@@ -133,9 +132,6 @@
     .game > h3 {
         font-size: 2rem;
     }
-    .details-btn {
-        font-size: 1.2rem;
-    }
     .rating span {
         padding: 3px;
         font-size:1rem;
@@ -194,11 +190,40 @@
         padding-bottom: 20px;
     }
     .bio {
+        padding: 0 20px;
         font-size: 1.3rem;
     }
     .img-container {
         width: 25%;
     }
+    .favorite-games.closed ul,
+    .bio.closed-story .profile-story,
+    .details-comments.closed-comment .comments {
+        display: none;
+    }
+    .favorite-games.open ul,
+    .bio.open-story .profile-story,
+    .details-comments.open-comment .comments {
+        display: block;
+    }
+    .fa-solid.fa-angle-down {
+        display: block;
+    }
+    .title-wrapper.story {
+        padding-top: 10px;
+    }
+    .title-wrapper h2 {
+        margin: 0;
+        padding-left: 0;
+    }
+    .title-wrapper h3,
+    .details-btn {
+        font-size: 1.2rem;
+    }
+    .details-comments {
+        display: block;
+    }
+    
 }
 
 
@@ -267,7 +292,7 @@
    }
    #profile-details>h1 {
     font-size: 1.8rem;
-}
+   }
 }
 
 
@@ -293,7 +318,9 @@
     .allGames-info {
         padding: 20px;
     }
-    .allGames-info>h6 {
+    .allGames-info>h6,
+    label,
+    .bio {
         font-size: 1.1rem;
     }
     .allGames-info .details-button {
@@ -323,20 +350,23 @@
         padding: 10px;
         height: 45px;
     }
-    label {
-        font-size: 1.1rem;
-    }
     .container>h1 {
         font-size: 1.7rem;
     }
-    .field>span {
+    .field>span,
+    .info-section>.text,
+    .bio p {
         font-size: 0.9rem;
     }
     .field {
         margin-top: 30px;
     }
-    .button {
-        font-size: 1rem;
+    .button{
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+    .button.edit {
+        padding: 11px 12px;
     }
     .create-comment>label {
         font-size: 1.5rem;
@@ -350,10 +380,15 @@
     #profile-details {
         margin: 40px auto;
     }
-    #profile-details>h1 {
+    #profile-details>h1,
+    #game-details>h1, 
+    #catalog-page>h1 {
         font-size: 1.5rem;
     }
-    .bio {
-        font-size: 1.1rem;
+    .title-wrapper h3 {
+        font-size: 1rem;
+    } 
+    .footer {
+        font-size: 0.9rem;
     }
 } 
