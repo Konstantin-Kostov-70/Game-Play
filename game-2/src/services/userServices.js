@@ -27,15 +27,35 @@ export const logUser = async (data) => {
     return result
 }
 
+// export const logoutUser = async (token) => {
+//     const res = await fetch(logoutURL, {
+//         method: 'POST',
+//         headers: {
+//             'Authorization': `Token ${token}`
+//         }, 
+//     })
+//     return res.status
+// }
+
 export const logoutUser = async (token) => {
-    const res = await fetch(logoutURL, {
-        method: 'POST',
-        headers: {
-            'Authorization': `Token ${token}`
-        }, 
-    })
-    return res.status
-}
+    try {
+        const res = await fetch(logoutURL, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Token ${token}`
+            }
+        });
+
+        if (!res.ok) {
+            throw new Error(`Error: ${res.status} ${res.statusText}`);
+        }
+
+        return res.status;
+    } catch (error) {
+        console.error('Logout failed:', error);
+        window.location.href = '/errors';   
+    }
+};
 
 export const getUser = async(token, id) => {
     if (!token) {
