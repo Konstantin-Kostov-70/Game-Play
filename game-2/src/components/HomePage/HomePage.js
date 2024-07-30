@@ -4,13 +4,16 @@ import * as services from '../../services/gameServices'
 
 export const HomePage = () => {
     const [games, setGames] = useState([])
+    const [isLoading, setIsLoading] = useState(true)
     useEffect(() => {
         services.getAll()
             .then(response => {
                 setGames(response.result)
+                setIsLoading(false)
             })
             .catch(error => {
                 console.error(error)
+                setIsLoading(false)
             })
     }, [])
 
@@ -29,10 +32,15 @@ export const HomePage = () => {
                 <div id="home-page">
                     <h1>Latest Games</h1>
                     <div id="home-page-card">
-                        {lastGames.length > 0
-                            ? lastGames.map((game, idx) => <GameCard key={game.id} game={game} />)
-                            : <p className="no-articles">No games yet</p>
-                        }
+                        {isLoading ? (
+                            <p>Loading ....</p>
+                        ) : (
+                            lastGames.length > 0 ? (
+                                lastGames.map((game, idx) => <GameCard key={game.id} game={game} />)
+                            ) : (
+                                <p className="no-articles">No games yet</p>
+                            )
+                        )}
                     </div>
                 </div>
             </section>
