@@ -54,11 +54,6 @@ nav a:hover {
     font-weight: bolder;
 }
 
-.home:hover {
-    color: rgb(82, 133, 139);
-    transition: color 0.5s ease-out;
-}
-
 #user,
 #guest {
    display: flex;
