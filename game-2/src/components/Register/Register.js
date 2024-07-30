@@ -34,14 +34,14 @@ export const Register = () => {
                     <div className="brand-logo"></div>
                     <h1>Register</h1>
 
-                    <label htmlFor="username">Username:</label>
-                    <input type="text" id="email" name="username" placeholder="Your username" />
+                    <label htmlFor="username-reg">Username:</label>
+                    <input type="text" id="username-reg" name="username" placeholder="Your username" />
 
-                    <label htmlFor="pass">Password:</label>
+                    <label htmlFor="register-password">Password:</label>
                     <input type="password" name="password" id="register-password" />
 
-                    <label htmlFor="con-pass">Confirm Password:</label>
-                    <input type="password" name="password2" id="confirm-password" />
+                    <label htmlFor="con-password">Confirm Password:</label>
+                    <input type="password" name="password2" id="con-password" />
 
                     <input className="btn submit" type="submit" value="Register" />
                 </div>
