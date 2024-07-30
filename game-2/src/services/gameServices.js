@@ -1,23 +1,5 @@
 const url = 'http://localhost:8000/games/'
 
-
-// export const getAll = () => {
-//     return fetch(url)
-//         .then(res => res.json())
-// }
-
-// export const getOne = (id) => {
-//     return fetch(`${url}/${id}`)
-//         .then(res => res.json())
-// }
-
-// export const deleteOne = (id) => {
-//     return fetch(`${url}/${id}`, {
-//         method: 'DELETE',
-//     })
-//         .then(res => res.json())
-// }
-
 export const getAll = async () => {
     try {
         const res = await fetch(url)
