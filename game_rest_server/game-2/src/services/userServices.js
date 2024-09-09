@@ -1,7 +1,8 @@
-const registerURL = 'http://localhost:8000/users/register/'
-const loginURL = 'http://localhost:8000/api/login/'
-const logoutURL = 'http://localhost:8000/api/logout/'
-const userUrl = 'http://localhost:8000/user/'
+const baseURL = 'http://localhost:8000/api'
+const registerURL = `${baseURL}/users/register/`
+const loginURL = `${baseURL}/login/`
+const logoutURL = `${baseURL}/logout/`
+const userUrl = `${baseURL}/user/`
 
 export const userRegister = async (data) => {
     const res = await fetch(registerURL, {

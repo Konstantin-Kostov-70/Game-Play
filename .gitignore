@@ -1,2 +1,4 @@
-/.idea
+.idea/
+.venv/
 /game_rest_server/db.sqlite3
+staticfiles/

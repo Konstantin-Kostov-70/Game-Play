@@ -1,4 +1,5 @@
-const url = 'http://localhost:8000/games/'
+const baseURL = 'http://localhost:8000/api'
+const url = `${baseURL}/games/`
 
 export const getAll = async () => {
     try {

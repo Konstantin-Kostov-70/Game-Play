@@ -1,4 +1,5 @@
-const url = 'http://localhost:8000/comments/'
+const baseURL = 'http://localhost:8000/api'
+const url = `${baseURL}/comments/`
 
 
 export const getGameAllComments = async(id) => {
