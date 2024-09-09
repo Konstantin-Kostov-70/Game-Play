@@ -37,6 +37,7 @@ function App() {
               <Route path="/catalog" element={<Catalog />} />
               <Route path="/errors" element={<ErrorPage />} />
               <Route path="/notfound" element={<NotFound />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
