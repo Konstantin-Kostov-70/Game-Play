@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:8000/api'
+const baseURL = 'http://rosapaw.com/api'
 const url = `${baseURL}/games/`
 
 export const getAll = async () => {

@@ -1,6 +1,7 @@
 .idea/
 .venv/
 venv/
+data.json
 __pycache__/
 **/.env
 **/db.sqlite3

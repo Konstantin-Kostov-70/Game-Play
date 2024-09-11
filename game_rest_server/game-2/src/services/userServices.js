@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:8000/api'
+const baseURL = 'http://rosapaw.com/api'
 const registerURL = `${baseURL}/users/register/`
 const loginURL = `${baseURL}/login/`
 const logoutURL = `${baseURL}/logout/`
