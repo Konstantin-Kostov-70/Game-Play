@@ -1,4 +1,4 @@
-const baseURL = 'https://rosapaw.com/api'
+const baseURL = 'https://gamesplay.kostov.website/api'
 const registerURL = `${baseURL}/users/register/`
 const loginURL = `${baseURL}/login/`
 const logoutURL = `${baseURL}/logout/`
