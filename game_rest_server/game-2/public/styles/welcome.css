@@ -1,186 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Teko:wght@300..700&display=swap");
+
 #welcome-world {
-    width: auto;
-    padding-right: 15px;
-    padding-top: 7em;
-    justify-content: right;
-    padding-left: 15px;
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
+  width: auto;
+  padding-right: 15px;
+  padding-top: 7em;
+  justify-content: right;
+  padding-left: 15px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 #welcome-world .welcome-message {
-    display: inline-block;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    top: 40%;
-    text-align: center;
-    width: 30%
+  display: inline-block;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  top: 40%;
+  text-align: center;
+  width: 30%;
 }
 
-#welcome-world>img {
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 60%;
-    margin-left: auto;
-    padding-left: auto;
+#welcome-world > img {
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 60%;
+  margin-left: auto;
+  padding-left: auto;
 }
 
 .welcome-message h2 {
-    color: #ffffff;
-    font-size: 300%;
-    font-size: 55px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: uppercase;
-    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
-    font-family: "Agency FB";
+  color: #ffffff;
+  font-size: 300%;
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+  font-family: "Agency FB", "Teko", "Agdasima";
 }
 
 .welcome-message h3 {
-    color: #ffffff;
-    font-size: 600%;
-    text-shadow: none;
-    line-height: 1;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
-    font-family: "Agency FB";
+  color: #ffffff;
+  font-size: 600%;
+  text-shadow: none;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+  font-family: "Agency FB", "Teko", "Agdasima";
 }
 
-#welcome-world>#home-page {
-    text-align: center;
+#welcome-world > #home-page {
+  text-align: center;
 }
 
 #home-page {
-    width: auto;
-    height: auto;
-    margin: 0 20px;
-    padding: 55px;
-    background-color: transparent;
-    box-shadow: 0px 0px 40px 0px;
-    overflow: hidden;
-    border-radius: 10px;
+  width: auto;
+  height: auto;
+  margin: 0 20px;
+  padding: 55px;
+  background-color: transparent;
+  box-shadow: 0px 0px 40px 0px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .game {
-    width: 25%;
-    height: auto;
-    margin-top: 20px;
-    padding: 50px;
-    background-position: right 35% bottom 45%;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 30px 0px brown;
-    border-radius: 15px;
-    float: left;
-    color: rgb(204, 144, 131);
+  width: 25%;
+  height: auto;
+  margin-top: 20px;
+  padding: 50px;
+  background-position: right 35% bottom 45%;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 30px 0px brown;
+  border-radius: 15px;
+  float: left;
+  color: rgb(204, 144, 131);
 }
 
 .game:hover {
-    box-shadow: 0px 0px 100px 30px brown;
+  box-shadow: 0px 0px 100px 30px brown;
 }
 
 .image-wrap {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 
-.image-wrap>img {
-    max-width: 100%;
+.image-wrap > img {
+  max-width: 100%;
 }
 
-.game>h3 {
-    font-family: "Agency FB";
-    font-size: 42px;
-    font-weight: 700;
-    line-height: normal;
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    transition: all 0.5s ease-out;
-    text-align: center;
-    text-transform: uppercase;
+.game > h3 {
+  font-family: "Agency FB", "Teko", "Agdasima";
+  font-size: 42px;
+  font-weight: 600;
+  line-height: normal;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.5s ease-out;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.game-content>h4 {
-    color: #c2d4f8;
-    font-size: 24px;
-    text-align: center;
-    font-weight: 700;
-    line-height: normal;
+.game-content > h4 {
+  color: #c2d4f8;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .rating {
-    unicode-bidi: bidi-override;
-    text-align: center;
-    direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: center;
+  direction: rtl;
 }
 
 .rating span {
-    font-size: 25px;
-    padding: 5px;
-    color: gold;
+  font-size: 25px;
+  padding: 5px;
+  color: gold;
 }
 
 .details-btn {
-    background-color: crimson;
-    font-size: 1.4rem;
-    padding-top: 20px;
-    margin-top: 10px;
-    color: white;
-    padding: 0.9em 1.4em;
+  background-color: crimson;
+  font-size: 1.4rem;
+  padding-top: 20px;
+  margin-top: 10px;
+  color: white;
+  padding: 0.9em 1.4em;
 }
 
 .data-buttons {
-    margin-top: 10px;
-    font-size: 1.4rem;
-    padding-top: 20px;
-    text-align: center;
+  margin-top: 10px;
+  font-size: 1.4rem;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .btn.details-btn:hover {
-    background-color: #fd5454;
-    color: white;
+  background-color: #fd5454;
+  color: white;
 }
 
-#home-page>h1 {
-    color: rgb(252, 168, 151);
-    text-align: center;
-    font-weight: 700;
-    font-size: 84px;
-    font-family: "Agency FB";
+#home-page > h1 {
+  color: rgb(252, 168, 151);
+  text-align: center;
+  font-weight: 600;
+  font-size: 84px;
+  font-family: "Agency FB", "Teko", "Agdasima";
 }
 #home-page-card {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .no-articles {
-    color: white;
-    text-align: center;
-    font-weight: 700;
-    font-size: 60px;
-    font-family: "Agency FB";
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 60px;
+  font-family: "Agency FB", "Teko", "Agdasima";
 }
 
 .user-name {
-    color: crimson;
+  color: crimson;
 }
-

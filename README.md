@@ -1,4 +1,5 @@
 # **Game Play Catalog Website**
+![gameplay](https://github.com/user-attachments/assets/30899d5e-0da1-418c-a7cf-138ab1ddbc3f)
 
 This project is a web application designed to manage games and comments, with functionalities for user authentication, game management, and comment management.
 

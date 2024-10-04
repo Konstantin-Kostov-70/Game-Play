@@ -1,4 +1,4 @@
-const baseURL = 'http://rosapaw.com/api'
+const baseURL = 'https://gamesplay.kostov.website/api'
 const url = `${baseURL}/comments/`
 
 
